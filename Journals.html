@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f2f2f2; color: #333;">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/wecomepage.html" style="color: rgb(45, 70, 45); font-weight: bold;">Holistic
+                Healing</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Journals.html">Journals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tools & Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://youtu.be/7Ep5mKuRmAA?feature=shared">Breathwork
+                                    guide</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://youtube.com/playlist?list=PL35uoLB8U5aynd9uLTs3oWClUX9UGX63C&feature=shared">Grounding
+                                    exercise</a></li>
+                                    <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://music.youtube.com/playlist?list=PL35uoLB8U5ayBOVthpTlg3yueTaArOZwC&feature=shared">Playlists</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://youtube.com/playlist?list=PL35uoLB8U5ayOicGV3kUl-KxJe9pk0tAM&feature=shared">Guided
+                                    Meditations</a></li>
+                        </ul>
+                    </li><br>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+
+<!-- Daily Journal Section -->
+<div style="background-color: #ffffff; padding: 40px 20px; text-align: center;">
+  <h2>Daily Journal</h2>
+  <p style="max-width: 800px; margin: auto;">Reflect on daily events, insights, and lessons. A great way to stay grounded and grateful.</p>
+  <div class="container mt-4">
+    <div class="card mx-auto" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div class="card-body text-center">
+        <h5 class="card-title">Daily Reflection</h5>
+        <p class="card-text">Capture today's key moments and lessons.</p>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#dailyModal">Start Journaling</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Emotion Journal Section -->
+<div style="background-color: #f5faf7; padding: 40px 20px; text-align: center;">
+  <h2>Emotion Journal</h2>
+  <p style="max-width: 800px; margin: auto;">Track and explore your emotional states. Build emotional intelligence and self-awareness.</p>
+  <div class="container mt-4">
+    <div class="card mx-auto" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div class="card-body text-center">
+        <h5 class="card-title">Emotional Awareness</h5>
+        <p class="card-text">Understand your emotions and where they come from.</p>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#emotionModal">Start Journaling</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Shadow Journal Section -->
+<div style="background-color: #eaf4ef; padding: 40px 20px; text-align: center;">
+  <h2>Shadow Journal</h2>
+  <p style="max-width: 800px; margin: auto;">Face hidden parts of yourself with curiosity and care. Explore what you avoid or suppress.</p>
+  <div class="container mt-4">
+    <div class="card mx-auto" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div class="card-body text-center">
+        <h5 class="card-title">Inner Reflection</h5>
+        <p class="card-text">Uncover patterns, triggers, and deeper truth.</p>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#shadowModal">Start Journaling</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Journal Modal -->
+<div class="modal fade" id="dailyModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="padding: 20px;">
+      <div class="modal-header">
+        <h5 class="modal-title">Daily Journal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label>1. What stood out to me today?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+        <label>2. What did I learn?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+        <label>3. What am I grateful for?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" onclick="alert('Saved!')">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Emotion Journal Modal -->
+<div class="modal fade" id="emotionModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="padding: 20px;">
+      <div class="modal-header">
+        <h5 class="modal-title">Emotion Journal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label>1. What emotion am I feeling most right now?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+        <label>2. What triggered this emotion?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+        <label>3. How did I respond?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" onclick="alert('Saved!')">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Shadow Journal Modal -->
+<div class="modal fade" id="shadowModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="padding: 20px;">
+      <div class="modal-header">
+        <h5 class="modal-title">Shadow Journal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label>1. What emotion or thought have I been avoiding?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+        <label>2. What part of myself do I hide or judge?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+        <label>3. What is this part trying to teach me?</label>
+        <textarea class="form-control mb-3" placeholder="Write your thoughts..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" onclick="alert('Saved!')">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div style="background-color: #2e4f35; color: white; text-align: center; padding: 30px;">
+  <p>&copy; 2025 The Mystics. All rights reserved.</p>
+  <a href="/Privacy_policy.html" style="color: white;">Privacy Policy</a><br />
+  <a href="/About.html" style="color: white;">About Us</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
